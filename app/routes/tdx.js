@@ -8,8 +8,8 @@ const fs = require("fs");
 function getTdxToken() {
   const parameter = {
     grant_type: "client_credentials",
-    client_id: process.env.CLIENT_ID,
-    client_secret: process.env.CLIENT_SECRET
+    client_id: process.env.TDX_CLIENT_ID,
+    client_secret: process.env.TDX_CLIENT_SECRET
   };
   let auth_url = "https://tdx.transportdata.tw/auth/realms/TDXConnect/protocol/openid-connect/token";
 

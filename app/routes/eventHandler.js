@@ -3,7 +3,7 @@ const axios = require("axios");
 const fs = require("fs");
 require('dotenv').config();
 const config = {
-  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
+  channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN
 };
 const client = new line.Client(config);
 

@@ -4,8 +4,8 @@ const line = require("@line/bot-sdk");
 const eventHandler = require("../routes/eventHandler");
 require('dotenv').config();
 const config = {
-  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
-  channelSecret: process.env.CHANNEL_SECRET,
+  channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN,
+  channelSecret: process.env.LINE_CHANNEL_SECRET,
 };
 router.post('/callback', line.middleware(config), eventHandler.postcallback);
 
