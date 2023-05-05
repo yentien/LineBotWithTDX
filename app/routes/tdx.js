@@ -31,7 +31,7 @@ function getTdxToken() {
     });
 }
 //啟動跑一次
-// getTdxToken();
+getTdxToken();
 //之後每4小時跑取得一次tdx token
 setInterval(getTdxToken, 14400000);
 
